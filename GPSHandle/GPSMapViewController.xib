@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPSMapViewController">
+            <connections>
+                <outlet property="mapView" destination="tCk-Tn-tZH" id="VsK-x5-hbH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tra-9x-fy7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TC-Yv-XHe">
+                            <rect key="frame" x="8" y="26" width="46" height="30"/>
+                            <state key="normal" title="Button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressMenu:" destination="-1" eventType="touchUpInside" id="vFS-wx-vyl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.49019607840000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="0cH-TY-5fG"/>
+                    </constraints>
+                </view>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tCk-Tn-tZH">
+                    <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="duF-Ax-9je"/>
+                    </connections>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOG-FR-fta">
+                    <rect key="frame" x="260" y="442" width="46" height="30"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didGotoUserLocation:" destination="-1" eventType="touchUpInside" id="eGS-Pw-dIt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tCk-Tn-tZH" secondAttribute="trailing" id="OQm-zk-jJn"/>
+                <constraint firstAttribute="trailing" secondItem="Tra-9x-fy7" secondAttribute="trailing" id="PF3-OU-l90"/>
+                <constraint firstItem="Tra-9x-fy7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ve0-jG-Mfr"/>
+                <constraint firstItem="tCk-Tn-tZH" firstAttribute="top" secondItem="Tra-9x-fy7" secondAttribute="bottom" id="XOR-LM-G3x"/>
+                <constraint firstItem="Tra-9x-fy7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZmF-ZY-PQf"/>
+                <constraint firstAttribute="bottom" secondItem="tCk-Tn-tZH" secondAttribute="bottom" id="anw-Yk-4Kz"/>
+                <constraint firstItem="tCk-Tn-tZH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hmE-83-g3Q"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="359" y="388"/>
+        </view>
+    </objects>
+</document>

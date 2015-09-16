@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Report</string>
+		<key>view</key>
+		<string>GPSMapViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Admin</string>
+		<key>view</key>
+		<string>GPSAdminViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>OverView</string>
+		<key>view</key>
+		<string>GPSOverViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>LogOut</string>
+		<key>view</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

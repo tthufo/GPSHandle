@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  GPSHandle
+//
+//  Created by thanhhaitran on 9/15/15.
+//  Copyright (c) 2015 lingo. All rights reserved.
+//
+
+#ifndef GPSHandle_PrefixHeader_pch
+#define GPSHandle_PrefixHeader_pch
+
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+
+#import "LTRequest.h"
+#import "LTNavigationViewController.h"
+#import "UINavigationController+login.h"
+#import "UIViewController+setupNavigation.h"
+#import "UIViewController+MJPopupViewController.h"
+#import "NSObject+Extension_Category.h"
+#import <JSONKit.h>
+#import <AVHexColor.h>
+
+#define kToken [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]
+#define kInfo [[NSUserDefaults standardUserDefaults] objectForKey:@"userinfo"]
+
+#define kAttention @"Attention"
+
+#define kChatHost @"http://lotto.librelocal.com"
+
+#define kGallery [NSString stringWithFormat:@"%@/plusgallery/services/",kChatHost]
+
+#define kChatID(X) [NSString stringWithFormat:@"%@@%@", X, kChatHost]
+
+#define SERVER @"lotto.librelocal.com"
+
+#define SERVER_ADDR [NSString stringWithFormat:@"http://%@/services", SERVER]
+
+#define service(X) [ASIFormDataRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", SERVER_ADDR, X]]]
+
+#endif
