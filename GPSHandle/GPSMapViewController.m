@@ -22,7 +22,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 }
 
 -(IBAction)didGotoUserLocation:(id)sender

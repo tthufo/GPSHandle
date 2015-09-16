@@ -19,8 +19,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tra-9x-fy7">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TC-Yv-XHe">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TC-Yv-XHe">
                             <rect key="frame" x="8" y="26" width="46" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="g1D-xf-hhH"/>
+                                <constraint firstAttribute="width" constant="46" id="hp7-nf-eqy"/>
+                            </constraints>
                             <state key="normal" title="Button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -28,10 +32,24 @@
                                 <action selector="didPressMenu:" destination="-1" eventType="touchUpInside" id="vFS-wx-vyl"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud7-4M-laq">
+                            <rect key="frame" x="70" y="26" width="181" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="H4d-Mw-nrg"/>
+                            </constraints>
+                            <state key="normal" title="Button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.92941176469999998" green="0.49019607840000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="64" id="0cH-TY-5fG"/>
+                        <constraint firstItem="ud7-4M-laq" firstAttribute="top" secondItem="Tra-9x-fy7" secondAttribute="top" constant="26" id="Clo-qX-NFo"/>
+                        <constraint firstItem="0TC-Yv-XHe" firstAttribute="top" secondItem="Tra-9x-fy7" secondAttribute="top" constant="26" id="D0P-iD-vjK"/>
+                        <constraint firstItem="0TC-Yv-XHe" firstAttribute="leading" secondItem="Tra-9x-fy7" secondAttribute="leading" constant="8" id="O1C-9j-5hD"/>
+                        <constraint firstItem="ud7-4M-laq" firstAttribute="leading" secondItem="0TC-Yv-XHe" secondAttribute="trailing" constant="16" id="jyx-Hb-uML"/>
+                        <constraint firstAttribute="trailing" secondItem="ud7-4M-laq" secondAttribute="trailing" constant="69" id="s3z-Xe-a9A"/>
                     </constraints>
                 </view>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tCk-Tn-tZH">
