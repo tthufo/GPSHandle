@@ -15,19 +15,25 @@ PODS:
   - AVHexColor (2.0.0)
   - JSONKit-NoWarning (1.2)
   - MBProgressHUD (0.9.1)
+  - PNChart (0.8.7):
+    - UICountingLabel (~> 1.2.0)
   - Reachability (3.2)
+  - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - ASIHTTPRequest
   - AVHexColor
   - JSONKit-NoWarning (~> 1.2)
   - MBProgressHUD (~> 0.9)
+  - PNChart (~> 0.8)
 
 SPEC CHECKSUMS:
   ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
   AVHexColor: 33e5e102f3b6f3acd002779183ee226e21870c28
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  PNChart: c1755716bbd45386d2035b2bf2ce73e6d3f8cb22
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
 COCOAPODS: 0.37.2
