@@ -12,6 +12,7 @@
 {
     IBOutlet UITableView * tableView;
     NSMutableArray * dataList;
+    int currentTab;
 }
 @end
 
@@ -54,12 +55,15 @@
 
 -(void)didPushView:(int)index
 {
+    if([NSStringFromClass([[self topViewController] class]) isEqualToString:dataList[index][@"view"]]) return;
+
     UIViewController * cons = [[NSClassFromString(dataList[index][@"view"]) alloc] initWithNibName:dataList[index][@"view"] bundle:nil];
+    
     switch (index)
     {
         case 0:
-            case 1:
-            case 2:
+        case 1:
+        case 2:
             [[self topViewController].navigationController pushViewController:cons animated:YES];
             break;
         case 3:
