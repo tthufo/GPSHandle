@@ -26,6 +26,7 @@
 		FC0D92371BB284660085FB69 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0D92341BB284660085FB69 /* avatar.png */; };
 		FC0D92381BB284660085FB69 /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0D92351BB284660085FB69 /* avatar@2x.png */; };
 		FC0D92391BB284660085FB69 /* avatar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0D92361BB284660085FB69 /* avatar@3x.png */; };
+		FC0D923C1BB290040085FB69 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0D923B1BB290040085FB69 /* NIDropDown.m */; };
 		FC5EC76D1BA7FC1100017F5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5EC76C1BA7FC1100017F5C /* main.m */; };
 		FC5EC7701BA7FC1100017F5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5EC76F1BA7FC1100017F5C /* AppDelegate.m */; };
 		FC5EC7731BA7FC1100017F5C /* GPSHandle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC5EC7711BA7FC1100017F5C /* GPSHandle.xcdatamodeld */; };
@@ -95,6 +96,8 @@
 		FC0D92341BB284660085FB69 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		FC0D92351BB284660085FB69 /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@2x.png"; sourceTree = "<group>"; };
 		FC0D92361BB284660085FB69 /* avatar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@3x.png"; sourceTree = "<group>"; };
+		FC0D923A1BB290040085FB69 /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIDropDown.h; path = category/NIDropDown.h; sourceTree = "<group>"; };
+		FC0D923B1BB290040085FB69 /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NIDropDown.m; path = category/NIDropDown.m; sourceTree = "<group>"; };
 		FC5EC7671BA7FC1100017F5C /* GPSHandle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSHandle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5EC76B1BA7FC1100017F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5EC76C1BA7FC1100017F5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -222,14 +225,14 @@
 			name = UserController;
 			sourceTree = "<group>";
 		};
-		FC0D92331BB2845C0085FB69 /* New Group */ = {
+		FC0D92331BB2845C0085FB69 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				FC0D92341BB284660085FB69 /* avatar.png */,
 				FC0D92351BB284660085FB69 /* avatar@2x.png */,
 				FC0D92361BB284660085FB69 /* avatar@3x.png */,
 			);
-			name = "New Group";
+			name = Images;
 			sourceTree = "<group>";
 		};
 		FC5EC75E1BA7FC1100017F5C = {
@@ -255,7 +258,7 @@
 		FC5EC7691BA7FC1100017F5C /* GPSHandle */ = {
 			isa = PBXGroup;
 			children = (
-				FC0D92331BB2845C0085FB69 /* New Group */,
+				FC0D92331BB2845C0085FB69 /* Images */,
 				FC5EC7B71BA80A9F00017F5C /* Request */,
 				FC5EC79B1BA8028600017F5C /* Navigation */,
 				FC5EC7991BA7FF2D00017F5C /* Category */,
@@ -323,6 +326,8 @@
 		FC5EC7991BA7FF2D00017F5C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				FC0D923A1BB290040085FB69 /* NIDropDown.h */,
+				FC0D923B1BB290040085FB69 /* NIDropDown.m */,
 				FC5EC7B41BA80A9600017F5C /* NSObject+Extension_Category.h */,
 				FC5EC7B51BA80A9600017F5C /* NSObject+Extension_Category.m */,
 			);
@@ -570,6 +575,7 @@
 				FC5EC7AE1BA804B800017F5C /* LTNavigationViewController.m in Sources */,
 				FC5EC7C81BA90B3A00017F5C /* MJPopupBackgroundView.m in Sources */,
 				FC0BB1821BB16AE0001E34E7 /* GPSChartViewController.m in Sources */,
+				FC0D923C1BB290040085FB69 /* NIDropDown.m in Sources */,
 				FC5EC7BE1BA80D0000017F5C /* GPSMapViewController.m in Sources */,
 				FC5EC7AF1BA804B800017F5C /* UINavigationController+login.m in Sources */,
 				FC5EC7BA1BA80AB100017F5C /* LTRequest.m in Sources */,
