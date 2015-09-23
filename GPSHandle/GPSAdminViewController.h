@@ -10,4 +10,6 @@
 
 @interface GPSAdminViewController : UIViewController
 
+@property (nonatomic, strong) HBPageViewController *page;
+
 @end

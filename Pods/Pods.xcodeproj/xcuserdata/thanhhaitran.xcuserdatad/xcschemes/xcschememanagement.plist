@@ -4,37 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-ASIHTTPRequest.xcscheme</key>
+		<key>ASIHTTPRequest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AVHexColor.xcscheme</key>
+		<key>AVHexColor.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-JSONKit-NoWarning.xcscheme</key>
+		<key>JSONKit-NoWarning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MBProgressHUD.xcscheme</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-PNChart.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Reachability.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-UICountingLabel.xcscheme</key>
+		<key>PNChart.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,45 +34,75 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIActivityIndicator-for-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UICountingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>38D556B2AF08E4EFD2D17CC7</key>
+		<key>1893DE70459B9C5430E1E53597BF9817</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D4B07EE0EB2C7017DB8B27D</key>
+		<key>3C4676EF23B4050F0F2CD3C99A196C8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7286DF8FF1D6C5415D852A93</key>
+		<key>724A3FBB6164553DE5BE64B0379B5EC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A9413FB3DD9F36C5124490E</key>
+		<key>7B100E2130FF4010228885B3A8609BC5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9ADA4A981F051A75889381C</key>
+		<key>9845B1A737BC16465AFA9920CE1FE2B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB05CF6CA7CC3377DCFB239A</key>
+		<key>9B33C728591B323703FE99D179203FF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB4DAA5D011C38938D319567</key>
+		<key>A55D38126FA823AC0E1EA22D97BEABCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EFB7D4087B880D2549628C59</key>
+		<key>D913D74E0356D4E963B8124EC7586BB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF6B62D79728EF0641BA03AAAE9C576B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC511E28905FE2C20E23DA0E564D2673</key>
 		<dict>
 			<key>primary</key>
 			<true/>

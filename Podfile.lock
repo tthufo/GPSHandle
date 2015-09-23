@@ -15,10 +15,15 @@ PODS:
   - AVHexColor (2.0.0)
   - JSONKit-NoWarning (1.2)
   - MBProgressHUD (0.9.1)
-  - PNChart (0.8.7):
-    - UICountingLabel (~> 1.2.0)
+  - PNChart (0.8):
+    - UICountingLabel (~> 1.0.0)
   - Reachability (3.2)
-  - UICountingLabel (1.2.0)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+  - UICountingLabel (1.0.0)
 
 DEPENDENCIES:
   - ASIHTTPRequest
@@ -26,14 +31,17 @@ DEPENDENCIES:
   - JSONKit-NoWarning (~> 1.2)
   - MBProgressHUD (~> 0.9)
   - PNChart (~> 0.8)
+  - UIActivityIndicator-for-SDWebImage
 
 SPEC CHECKSUMS:
   ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
   AVHexColor: 33e5e102f3b6f3acd002779183ee226e21870c28
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
-  PNChart: c1755716bbd45386d2035b2bf2ce73e6d3f8cb22
+  PNChart: d62a59b248e890ea688252a03a276f9805244148
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
+  UICountingLabel: 540feeca6bbb78be892c8ab75b6ad02313cb2b10
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

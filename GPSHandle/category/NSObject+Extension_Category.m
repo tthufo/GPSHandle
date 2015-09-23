@@ -56,6 +56,7 @@ CLLocationManager * locationManager;
         }
         return nil;
     }
+    NSLog(@"_%@",@{@"lat":@(locationManager.location.coordinate.longitude),@"lng":@(locationManager.location.coordinate.latitude)});
     return @{@"lat":@(locationManager.location.coordinate.longitude),@"lng":@(locationManager.location.coordinate.latitude)};
 }
 

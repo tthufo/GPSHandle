@@ -3,24 +3,32 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>image</key>
+		<string>avatar</string>
 		<key>title</key>
 		<string>Report</string>
 		<key>view</key>
 		<string>GPSMapViewController</string>
 	</dict>
 	<dict>
+		<key>image</key>
+		<string>avatar</string>
 		<key>title</key>
 		<string>Admin</string>
 		<key>view</key>
 		<string>GPSAdminViewController</string>
 	</dict>
 	<dict>
+		<key>image</key>
+		<string>avatar</string>
 		<key>title</key>
 		<string>OverView</string>
 		<key>view</key>
 		<string>GPSOverViewController</string>
 	</dict>
 	<dict>
+		<key>image</key>
+		<string>avatar</string>
 		<key>title</key>
 		<string>LogOut</string>
 		<key>view</key>

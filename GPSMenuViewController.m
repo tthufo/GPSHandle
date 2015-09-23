@@ -13,6 +13,7 @@
     IBOutlet UITableView * tableView;
     NSMutableArray * dataList;
     int currentTab;
+    BOOL isExpand;
 }
 @end
 
@@ -21,36 +22,75 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    isExpand = YES;
     dataList = [[NSMutableArray alloc] initWithArray:[[NSArray new] arrayWithPlist:@"MenuList"]];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-     return dataList.count;
+    return isExpand ? (dataList.count + 1) : 2;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    return 45;
+    return indexPath.row == 0 ? 181 : 65;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)_tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"menu"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indexPath.row == 0 ? @"headerCell" : @"menu"];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"menu"] ;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"GPSMenuCell" owner:nil options:nil][indexPath.row == 0 ? 0 : 1];
     }
-    
-    cell.textLabel.text = dataList[indexPath.row][@"title"];
+    if(indexPath.row == 0)
+    {
+        [self didSetupHeaderCell:cell];
+    }
+    else
+    {
+        [self didSetupMenuCell:cell andIndexPath:indexPath];
+    }
     return cell;
 }
 
--(void)tableView:(UITableView *)_tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)didSetupHeaderCell:(UITableViewCell*)cell
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UIImageView * avatar = (UIImageView*)[cell viewWithTag:11];
+    [avatar setImageWithURL:[NSURL URLWithString:@""] placeholderImage:kAvatar options:SDWebImageCacheMemoryOnly usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    [avatar withBorder:@{@"Bcorner":@(avatar.frame.size.width / 2),@"Bwidth":@(1)}];
+    
+    ((UILabel*)[cell viewWithTag:12]).text = @"uname";
+    ((UILabel*)[cell viewWithTag:14]).text = @"email";
+    
+    [((UIButton *)[cell viewWithTag:16]) addTarget:self action:@selector(didPressArrow:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)didSetupMenuCell:(UITableViewCell*)cell andIndexPath:(NSIndexPath*)indexPath
+{
+    UIImageView * image = (UIImageView*)[cell viewWithTag:11];
+    image.image = [UIImage imageNamed:dataList[indexPath.row - 1][@"image"]];
+    ((UILabel*)[cell viewWithTag:12]).text = dataList[indexPath.row - 1][@"title"];
+    if(!isExpand)
+    {
+        [image setImageWithURL:[NSURL URLWithString:@""] placeholderImage:kAvatar options:SDWebImageCacheMemoryOnly usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        [image withBorder:@{@"Bcorner":@(image.frame.size.width / 2),@"Bwidth":@(1)}];
+        ((UILabel*)[cell viewWithTag:12]).text = @"email";
+    }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.row == 0) return;
     [self dismissPopupViewControllerWithanimationType:6];
-    [self didPushView:indexPath.row];
+    if(!isExpand) return;
+    [self didPushView:(int)(indexPath.row - 1)];
+}
+
+-(void)didPressArrow:(id)sender
+{
+    isExpand =! isExpand;
+    [tableView reloadDataWithAnimation:YES];
 }
 
 -(void)didPushView:(int)index

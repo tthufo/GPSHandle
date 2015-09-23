@@ -18,11 +18,14 @@
 #import "UIViewController+setupNavigation.h"
 #import "UIViewController+MJPopupViewController.h"
 #import "NSObject+Extension_Category.h"
+#import "HBPageViewController.h"
 #import <JSONKit.h>
 #import <AVHexColor.h>
+#import "UIImageView+UIActivityIndicatorForSDWebImage.h"
 
 #define kToken [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]
 #define kInfo [[NSUserDefaults standardUserDefaults] objectForKey:@"userinfo"]
+#define kAvatar [UIImage imageNamed:@"avatar"]
 
 #define kAttention @"Attention"
 

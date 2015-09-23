@@ -58,8 +58,12 @@
                         <outlet property="delegate" destination="-1" id="duF-Ax-9je"/>
                     </connections>
                 </mapView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOG-FR-fta">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOG-FR-fta">
                     <rect key="frame" x="260" y="442" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="88c-q9-KGC"/>
+                        <constraint firstAttribute="width" constant="46" id="P9w-4f-7dz"/>
+                    </constraints>
                     <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -74,9 +78,11 @@
                 <constraint firstAttribute="trailing" secondItem="Tra-9x-fy7" secondAttribute="trailing" id="PF3-OU-l90"/>
                 <constraint firstItem="Tra-9x-fy7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ve0-jG-Mfr"/>
                 <constraint firstItem="tCk-Tn-tZH" firstAttribute="top" secondItem="Tra-9x-fy7" secondAttribute="bottom" id="XOR-LM-G3x"/>
+                <constraint firstAttribute="bottom" secondItem="HOG-FR-fta" secondAttribute="bottom" constant="8" id="XPV-pF-783"/>
                 <constraint firstItem="Tra-9x-fy7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZmF-ZY-PQf"/>
                 <constraint firstAttribute="bottom" secondItem="tCk-Tn-tZH" secondAttribute="bottom" id="anw-Yk-4Kz"/>
                 <constraint firstItem="tCk-Tn-tZH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hmE-83-g3Q"/>
+                <constraint firstAttribute="trailing" secondItem="HOG-FR-fta" secondAttribute="trailing" constant="14" id="p6A-Yx-J7F"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="359" y="388"/>

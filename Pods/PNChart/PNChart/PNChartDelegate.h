@@ -27,7 +27,4 @@
  */
 - (void)userClickedOnBarAtIndex:(NSInteger)barIndex;
 
-
-- (void)userClickedOnPieIndexItem:(NSInteger)pieIndex;
-- (void)didUnselectPieItem;
 @end

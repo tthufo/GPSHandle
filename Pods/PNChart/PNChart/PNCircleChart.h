@@ -13,9 +13,7 @@
 typedef NS_ENUM (NSUInteger, PNChartFormatType) {
     PNChartFormatTypePercent,
     PNChartFormatTypeDollar,
-    PNChartFormatTypeNone,
-    PNChartFormatTypeDecimal,
-    PNChartFormatTypeDecimalTwoPlaces,
+    PNChartFormatTypeNone
 };
 
 #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
