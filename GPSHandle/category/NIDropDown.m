@@ -39,24 +39,26 @@
     self.rect = b;
     
     self.bgColor = color;
-    
     animationDirection = direction;
     self.table = (UITableView *)[super init];
-    if (self) {
-        // Initialization code
+    if (self)
+    {
         CGRect btn = self.rect;//b.frame;
         self.list = [NSArray arrayWithArray:arr];
         self.imageList = [NSArray arrayWithArray:imgArr];
-        if ([direction isEqualToString:@"up"]) {
+        if ([direction isEqualToString:@"up"])
+        {
             self.frame = CGRectMake(btn.origin.x, btn.origin.y, btn.size.width, 0);
             self.layer.shadowOffset = CGSizeMake(-5, -5);
-        }else if ([direction isEqualToString:@"down"]) {
+        }
+        else if ([direction isEqualToString:@"down"])
+        {
             self.frame = CGRectMake(btn.origin.x, btn.origin.y+btn.size.height, btn.size.width, 0);
             self.layer.shadowOffset = CGSizeMake(-5, 5);
         }
         
         self.layer.masksToBounds = NO;
-        self.layer.cornerRadius = 8;
+        self.layer.cornerRadius = 0;
         self.layer.shadowRadius = 8;
         self.layer.shadowOpacity = 0.5;
         
@@ -65,14 +67,13 @@
         table.showsVerticalScrollIndicator = NO;
         table.delegate = self;
         table.dataSource = self;
-        table.layer.cornerRadius = 8;
+        table.layer.cornerRadius = 0;
         
         table.backgroundColor = color ? color : [UIColor colorWithRed:173/255.0f green:146/255.0f blue:101/255.0f alpha:1];
 
         table.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-        table.separatorColor = [UIColor grayColor];
-        
-        
+        table.separatorColor = [UIColor clearColor];
+    
         [UIView animateWithDuration:0.5 animations:^{
         
             if ([direction isEqualToString:@"up"]) {
@@ -82,26 +83,15 @@
             }
             table.frame = CGRectMake(0, 0, btn.size.width, *height);
             
-        } completion:^( BOOL finish){
+        } completion:^(BOOL finish){
             [table scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:preselected inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
         }];
-//        [UIView beginAnimations:nil context:nil];
-//        [UIView setAnimationDuration:0.5];
-//        if ([direction isEqualToString:@"up"]) {
-//            self.frame = CGRectMake(btn.origin.x, btn.origin.y-*height, btn.size.width, *height);
-//        } else if([direction isEqualToString:@"down"]) {
-//            self.frame = CGRectMake(btn.origin.x, btn.origin.y+btn.size.height, btn.size.width, *height);
-//        }
-//        table.frame = CGRectMake(0, 0, btn.size.width, *height);
-//        [UIView commitAnimations];
-        //[b.superview addSubview:self];
         [view addSubview:self];
         [self addSubview:table];
     }
     return self;
 }
 
-//-(void)hideDropDown:(UIButton *)b
 -(void)hideDropDown//:(CGRect )b
 {
     //CGRect btn = b.frame;
@@ -143,22 +133,38 @@
         cell.backgroundColor = self.bgColor ? self.bgColor : [UIColor colorWithRed:173/255.0f green:146/255.0f blue:101/255.0f alpha:1];
         cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     }
-    if ([self.imageList count] == [self.list count]) {
+    
+    cell.textLabel.text =list[indexPath.row][@"name"];
+    
+    if(imageList.count != 0)
+    {
+        cell.imageView.image = imageList[indexPath.row];
+    }
+    
+    /*
+    if ([self.imageList count] == [self.list count])
+    {
+        cell.textLabel.text =list[indexPath.row][@"name"];
+        cell.imageView.image = imageList[indexPath.row];
+    }
+    else if ([self.imageList count] > [self.list count])
+    {
         cell.textLabel.text =[list objectAtIndex:indexPath.row][@"name"];
-        cell.imageView.image = [imageList objectAtIndex:indexPath.row];
-    } else if ([self.imageList count] > [self.list count]) {
-        cell.textLabel.text =[list objectAtIndex:indexPath.row][@"name"];
-        if (indexPath.row < [imageList count]) {
-            cell.imageView.image = [imageList objectAtIndex:indexPath.row];
-        }
-    } else if ([self.imageList count] < [self.list count]) {
-        cell.textLabel.text =[list objectAtIndex:indexPath.row][@"name"];
-        if (indexPath.row < [imageList count]) {
+        if (indexPath.row < [imageList count])
+        {
             cell.imageView.image = [imageList objectAtIndex:indexPath.row];
         }
     }
+    else if ([self.imageList count] < [self.list count])
+    {
+        cell.textLabel.text =[list objectAtIndex:indexPath.row][@"name"];
+        if (indexPath.row < [imageList count])
+        {
+            cell.imageView.image = [imageList objectAtIndex:indexPath.row];
+        }
+    }
+     */
 
-    
     if(indexPath.row == hightlight)
     {
         cell.textLabel.textColor = [UIColor blueColor];//[UIColor colorWithRed:210/255.0f green:147/255.0f blue:65/255.0f alpha:1]; //210 147 65 ];

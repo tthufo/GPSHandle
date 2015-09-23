@@ -27,6 +27,6 @@
 
 - (void)hideDropDown;//:(UIButton *)b;
 //- (id)showDropDown:(UIButton *)b:(CGFloat *)height:(NSArray *)arr:(NSArray *)imgArr:(NSString *)direction;
-- (id)showDropDown:(CGRect )b:(CGFloat *)height:(NSArray *)arr:(NSArray *)imgArr:(NSString *)direction:(UIView*)view:(UIColor*)color:(UIButton*)host:(int)preselected;
+- (id)showDropDown:(CGRect)b:(CGFloat *)height:(NSArray *)arr:(NSArray *)imgArr:(NSString *)direction:(UIView*)view:(UIColor*)color:(UIButton*)host:(int)preselected;
 
 @end

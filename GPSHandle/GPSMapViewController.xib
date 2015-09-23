@@ -33,23 +33,26 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud7-4M-laq">
-                            <rect key="frame" x="70" y="26" width="181" height="30"/>
+                            <rect key="frame" x="70" y="18" width="181" height="46"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="H4d-Mw-nrg"/>
+                                <constraint firstAttribute="height" constant="46" id="1zE-Sa-XD7"/>
                             </constraints>
                             <state key="normal" title="Button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="didPressOptions:" destination="-1" eventType="touchUpInside" id="RtX-NM-OZm"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.92941176469999998" green="0.49019607840000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="64" id="0cH-TY-5fG"/>
-                        <constraint firstItem="ud7-4M-laq" firstAttribute="top" secondItem="Tra-9x-fy7" secondAttribute="top" constant="26" id="Clo-qX-NFo"/>
                         <constraint firstItem="0TC-Yv-XHe" firstAttribute="top" secondItem="Tra-9x-fy7" secondAttribute="top" constant="26" id="D0P-iD-vjK"/>
                         <constraint firstItem="0TC-Yv-XHe" firstAttribute="leading" secondItem="Tra-9x-fy7" secondAttribute="leading" constant="8" id="O1C-9j-5hD"/>
-                        <constraint firstItem="ud7-4M-laq" firstAttribute="leading" secondItem="0TC-Yv-XHe" secondAttribute="trailing" constant="16" id="jyx-Hb-uML"/>
-                        <constraint firstAttribute="trailing" secondItem="ud7-4M-laq" secondAttribute="trailing" constant="69" id="s3z-Xe-a9A"/>
+                        <constraint firstAttribute="trailing" secondItem="ud7-4M-laq" secondAttribute="trailing" constant="69" id="bAr-0T-OoS"/>
+                        <constraint firstItem="ud7-4M-laq" firstAttribute="top" secondItem="Tra-9x-fy7" secondAttribute="top" constant="18" id="fWx-L0-tDO"/>
+                        <constraint firstItem="ud7-4M-laq" firstAttribute="leading" secondItem="0TC-Yv-XHe" secondAttribute="trailing" constant="16" id="pGF-9J-PZS"/>
                     </constraints>
                 </view>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tCk-Tn-tZH">
@@ -85,7 +88,7 @@
                 <constraint firstAttribute="trailing" secondItem="HOG-FR-fta" secondAttribute="trailing" constant="14" id="p6A-Yx-J7F"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="359" y="388"/>
+            <point key="canvasLocation" x="181" y="356"/>
         </view>
     </objects>
 </document>

@@ -10,9 +10,10 @@
 #import "GPSMenuViewController.h"
 #import <MapKit/MapKit.h>
 
-@interface GPSMapViewController ()
+@interface GPSMapViewController ()<NIDropDownDelegate>
 {
     IBOutlet MKMapView * mapView;
+    NIDropDown *dropDown;
 }
 
 @end
@@ -41,6 +42,41 @@
     nav.accessibilityLabel = @"3rd";
     [self presentPopupViewController:nav animationType:6];
 }
+
+-(IBAction)didPressOptions:(id)sender
+{
+    UIButton * cover = [UIButton buttonWithType:UIButtonTypeCustom];
+    cover.tag = 99909;
+    cover.frame = CGRectMake(0, 0, screenWidth, screenHeight);
+    [cover addTarget:self action:@selector(didPressCover:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:cover];
+    if(dropDown == nil)
+    {
+        CGFloat f = 140;
+        dropDown = [[NIDropDown alloc] showDropDown:((UIButton*)sender).frame :&f :[[NSArray new] arrayWithPlist:@"GPSOptionList"] :@[] :@"down" :self.view : [UIColor redColor]:sender : 0];
+        dropDown.delegate = self;
+    }
+    else
+    {
+        [dropDown hideDropDown];
+        dropDown = nil;
+    }
+}
+
+- (void)niDropDownDelegateMethod:(NIDropDown *)sender
+{
+    [self didPressCover:sender.btnSender];
+    [dropDown hideDropDown];
+    dropDown = nil;
+}
+
+-(void)didPressCover:(UIButton*)sender
+{
+    [[self.view viewWithTag:99909] removeFromSuperview];
+    [dropDown hideDropDown];
+    dropDown = nil;
+}
+
 
 - (void)mapView:(MKMapView *)_mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {

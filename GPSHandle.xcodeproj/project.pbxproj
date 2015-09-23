@@ -23,10 +23,8 @@
 		FC0D922D1BB260830085FB69 /* GPSGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0D922B1BB260830085FB69 /* GPSGroupViewController.xib */; };
 		FC0D92311BB260900085FB69 /* GPSDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0D922F1BB260900085FB69 /* GPSDeviceViewController.m */; };
 		FC0D92321BB260900085FB69 /* GPSDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0D92301BB260900085FB69 /* GPSDeviceViewController.xib */; };
-		FC0D92371BB284660085FB69 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0D92341BB284660085FB69 /* avatar.png */; };
-		FC0D92381BB284660085FB69 /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0D92351BB284660085FB69 /* avatar@2x.png */; };
-		FC0D92391BB284660085FB69 /* avatar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0D92361BB284660085FB69 /* avatar@3x.png */; };
 		FC0D923C1BB290040085FB69 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0D923B1BB290040085FB69 /* NIDropDown.m */; };
+		FC0D923E1BB295F50085FB69 /* GPSOptionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC0D923D1BB295F50085FB69 /* GPSOptionList.plist */; };
 		FC5EC76D1BA7FC1100017F5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5EC76C1BA7FC1100017F5C /* main.m */; };
 		FC5EC7701BA7FC1100017F5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5EC76F1BA7FC1100017F5C /* AppDelegate.m */; };
 		FC5EC7731BA7FC1100017F5C /* GPSHandle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC5EC7711BA7FC1100017F5C /* GPSHandle.xcdatamodeld */; };
@@ -98,6 +96,7 @@
 		FC0D92361BB284660085FB69 /* avatar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@3x.png"; sourceTree = "<group>"; };
 		FC0D923A1BB290040085FB69 /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIDropDown.h; path = category/NIDropDown.h; sourceTree = "<group>"; };
 		FC0D923B1BB290040085FB69 /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NIDropDown.m; path = category/NIDropDown.m; sourceTree = "<group>"; };
+		FC0D923D1BB295F50085FB69 /* GPSOptionList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GPSOptionList.plist; sourceTree = "<group>"; };
 		FC5EC7671BA7FC1100017F5C /* GPSHandle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSHandle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5EC76B1BA7FC1100017F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5EC76C1BA7FC1100017F5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -319,6 +318,7 @@
 				FC5EC7BB1BA80D0000017F5C /* GPSMapViewController.h */,
 				FC5EC7BC1BA80D0000017F5C /* GPSMapViewController.m */,
 				FC5EC7BD1BA80D0000017F5C /* GPSMapViewController.xib */,
+				FC0D923D1BB295F50085FB69 /* GPSOptionList.plist */,
 			);
 			name = LogInController;
 			sourceTree = "<group>";
@@ -485,7 +485,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC0D92371BB284660085FB69 /* avatar.png in Resources */,
 				FC5EC7BF1BA80D0000017F5C /* GPSMapViewController.xib in Resources */,
 				FC5EC7D11BA914AA00017F5C /* MenuList.plist in Resources */,
 				FC0D92281BB260730085FB69 /* GPSUserViewController.xib in Resources */,
@@ -494,12 +493,11 @@
 				FC5EC7D71BA945A600017F5C /* GPSAdminViewController.xib in Resources */,
 				FC0D921F1BB25F2A0085FB69 /* GPSAdminList.plist in Resources */,
 				FC0D92181BB2461C0085FB69 /* GPSMenuCell.xib in Resources */,
-				FC0D92391BB284660085FB69 /* avatar@3x.png in Resources */,
+				FC0D923E1BB295F50085FB69 /* GPSOptionList.plist in Resources */,
 				FC0BB1881BB16B57001E34E7 /* GPSSummaryViewController.xib in Resources */,
 				FC5EC7981BA7FF0700017F5C /* GPSLogInViewController.xib in Resources */,
 				FC5EC7DD1BA945DB00017F5C /* GPSOverViewController.xib in Resources */,
 				FC5EC77E1BA7FC1100017F5C /* LaunchScreen.xib in Resources */,
-				FC0D92381BB284660085FB69 /* avatar@2x.png in Resources */,
 				FC0D921D1BB25E780085FB69 /* GPSAccountViewController.xib in Resources */,
 				FC5EC7CF1BA90BC900017F5C /* GPSMenuViewController.xib in Resources */,
 				FC5EC7C31BA9059600017F5C /* LTNavigationViewController.xib in Resources */,

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>UMAPS</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mobile Tracker</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>All</string>
+	</dict>
+</array>
+</plist>
