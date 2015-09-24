@@ -20,6 +20,8 @@
 - (void)hideHUD;
 - (void)initLocation;
 - (NSDictionary *)currentLocation;
+- (id)withView:(id)superView tag:(int)tag;
+- (int)inDexOf:(UIView*)view andTable:(UITableView*)tableView;
 @end
 
 @interface NSDictionary (name)

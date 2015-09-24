@@ -53,6 +53,7 @@
 		FC5EC7D71BA945A600017F5C /* GPSAdminViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5EC7D51BA945A600017F5C /* GPSAdminViewController.xib */; };
 		FC5EC7DC1BA945DB00017F5C /* GPSOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5EC7DA1BA945DB00017F5C /* GPSOverViewController.m */; };
 		FC5EC7DD1BA945DB00017F5C /* GPSOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5EC7DB1BA945DB00017F5C /* GPSOverViewController.xib */; };
+		FCAB8CB61BB3978600FF5884 /* GPSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAB8CB51BB3978600FF5884 /* GPSCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,9 +92,6 @@
 		FC0D922E1BB260900085FB69 /* GPSDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSDeviceViewController.h; sourceTree = "<group>"; };
 		FC0D922F1BB260900085FB69 /* GPSDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSDeviceViewController.m; sourceTree = "<group>"; };
 		FC0D92301BB260900085FB69 /* GPSDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPSDeviceViewController.xib; sourceTree = "<group>"; };
-		FC0D92341BB284660085FB69 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
-		FC0D92351BB284660085FB69 /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@2x.png"; sourceTree = "<group>"; };
-		FC0D92361BB284660085FB69 /* avatar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@3x.png"; sourceTree = "<group>"; };
 		FC0D923A1BB290040085FB69 /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIDropDown.h; path = category/NIDropDown.h; sourceTree = "<group>"; };
 		FC0D923B1BB290040085FB69 /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NIDropDown.m; path = category/NIDropDown.m; sourceTree = "<group>"; };
 		FC0D923D1BB295F50085FB69 /* GPSOptionList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GPSOptionList.plist; sourceTree = "<group>"; };
@@ -144,6 +142,7 @@
 		FC5EC7D91BA945DB00017F5C /* GPSOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSOverViewController.h; sourceTree = "<group>"; };
 		FC5EC7DA1BA945DB00017F5C /* GPSOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSOverViewController.m; sourceTree = "<group>"; };
 		FC5EC7DB1BA945DB00017F5C /* GPSOverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPSOverViewController.xib; sourceTree = "<group>"; };
+		FCAB8CB51BB3978600FF5884 /* GPSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPSCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,18 +219,9 @@
 				FC0D92241BB260730085FB69 /* GPSUserViewController.h */,
 				FC0D92251BB260730085FB69 /* GPSUserViewController.m */,
 				FC0D92261BB260730085FB69 /* GPSUserViewController.xib */,
+				FCAB8CB51BB3978600FF5884 /* GPSCell.xib */,
 			);
 			name = UserController;
-			sourceTree = "<group>";
-		};
-		FC0D92331BB2845C0085FB69 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				FC0D92341BB284660085FB69 /* avatar.png */,
-				FC0D92351BB284660085FB69 /* avatar@2x.png */,
-				FC0D92361BB284660085FB69 /* avatar@3x.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		FC5EC75E1BA7FC1100017F5C = {
@@ -257,7 +247,6 @@
 		FC5EC7691BA7FC1100017F5C /* GPSHandle */ = {
 			isa = PBXGroup;
 			children = (
-				FC0D92331BB2845C0085FB69 /* Images */,
 				FC5EC7B71BA80A9F00017F5C /* Request */,
 				FC5EC79B1BA8028600017F5C /* Navigation */,
 				FC5EC7991BA7FF2D00017F5C /* Category */,
@@ -487,6 +476,7 @@
 			files = (
 				FC5EC7BF1BA80D0000017F5C /* GPSMapViewController.xib in Resources */,
 				FC5EC7D11BA914AA00017F5C /* MenuList.plist in Resources */,
+				FCAB8CB61BB3978600FF5884 /* GPSCell.xib in Resources */,
 				FC0D92281BB260730085FB69 /* GPSUserViewController.xib in Resources */,
 				FC0D922D1BB260830085FB69 /* GPSGroupViewController.xib in Resources */,
 				FC5EC7791BA7FC1100017F5C /* Main.storyboard in Resources */,

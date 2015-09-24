@@ -23,6 +23,7 @@
 #import <AVHexColor.h>
 #import "NIDropDown.h"
 #import "UIImageView+UIActivityIndicatorForSDWebImage.h"
+#import "ChopeToastView.h"
 
 #define kToken [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]
 #define kInfo [[NSUserDefaults standardUserDefaults] objectForKey:@"userinfo"]

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1985CBC487A5E4B08BC272FA"
-               BuildableName = "libJSONKit-NoWarning.a"
-               BlueprintName = "JSONKit-NoWarning"
+               BlueprintIdentifier = "38E068D10D5B17B8015563BF"
+               BuildableName = "libChopeToastView.a"
+               BlueprintName = "ChopeToastView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

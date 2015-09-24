@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72841A757BFFC20D661BAF32"
+               BlueprintIdentifier = "C70D043C30429D2CC78EE74F"
                BuildableName = "libAVHexColor.a"
                BlueprintName = "AVHexColor"
                ReferencedContainer = "container:Pods.xcodeproj">

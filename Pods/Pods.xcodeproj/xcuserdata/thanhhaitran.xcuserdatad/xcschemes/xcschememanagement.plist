@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ChopeToastView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSONKit-NoWarning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,37 +67,42 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C4676EF23B4050F0F2CD3C99A196C8B</key>
+		<key>2566A245DE4C687059B07C3A0847ADB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>724A3FBB6164553DE5BE64B0379B5EC6</key>
+		<key>2C34BC5C6E6A2381203D3712B5632103</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7B100E2130FF4010228885B3A8609BC5</key>
+		<key>41D5777F860B59D4CC2779B6A9680DC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9845B1A737BC16465AFA9920CE1FE2B2</key>
+		<key>4E1B9FD115B06FFD8DF38C549670ECB8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9B33C728591B323703FE99D179203FF4</key>
+		<key>4F2202013C1F5C42DBDE5C5893DBA493</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A55D38126FA823AC0E1EA22D97BEABCC</key>
+		<key>7A1E0EE202D09808C40ABFDE395A0054</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D913D74E0356D4E963B8124EC7586BB5</key>
+		<key>C1F3CD694595D798AC438951F6E57D84</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D91D43DE77DD815CAFA2F0E77E7C41A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

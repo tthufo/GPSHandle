@@ -13,6 +13,7 @@ PODS:
   - ASIHTTPRequest/S3 (1.8.2):
     - ASIHTTPRequest/Core
   - AVHexColor (2.0.0)
+  - ChopeToastView (0.4.0)
   - JSONKit-NoWarning (1.2)
   - MBProgressHUD (0.9.1)
   - PNChart (0.8):
@@ -28,6 +29,7 @@ PODS:
 DEPENDENCIES:
   - ASIHTTPRequest
   - AVHexColor
+  - ChopeToastView
   - JSONKit-NoWarning (~> 1.2)
   - MBProgressHUD (~> 0.9)
   - PNChart (~> 0.8)
@@ -36,6 +38,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
   AVHexColor: 33e5e102f3b6f3acd002779183ee226e21870c28
+  ChopeToastView: cb4b1120dad07d0c40df517819a3a6bf405151b1
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   PNChart: d62a59b248e890ea688252a03a276f9805244148

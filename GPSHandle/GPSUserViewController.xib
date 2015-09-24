@@ -2,11 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPSUserViewController">
             <connections>
+                <outlet property="tableView" destination="nfG-Df-Iuo" id="Kll-8r-qNS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,10 +23,22 @@
                         <constraint firstAttribute="height" constant="65" id="hlO-gx-ZdQ"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nfG-Df-Iuo">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="415"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="olD-HK-ql5"/>
+                        <outlet property="delegate" destination="-1" id="Edi-iu-wNe"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="nfG-Df-Iuo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4d8-kQ-Gf3"/>
+                <constraint firstItem="nfG-Df-Iuo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rav-ze-vz1"/>
                 <constraint firstAttribute="trailing" secondItem="zWT-4q-ZyT" secondAttribute="trailing" id="f78-ik-w2p"/>
+                <constraint firstItem="zWT-4q-ZyT" firstAttribute="top" secondItem="nfG-Df-Iuo" secondAttribute="bottom" id="ncJ-eS-0fu"/>
+                <constraint firstAttribute="trailing" secondItem="nfG-Df-Iuo" secondAttribute="trailing" id="rZ0-I5-dDj"/>
                 <constraint firstItem="zWT-4q-ZyT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vla-Ce-bIX"/>
                 <constraint firstAttribute="bottom" secondItem="zWT-4q-ZyT" secondAttribute="bottom" id="zVv-il-YxZ"/>
             </constraints>

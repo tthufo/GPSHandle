@@ -29,7 +29,7 @@
         UIButton * bar = [UIButton buttonWithType:UIButtonTypeCustom];
         bar.tag = i;
         [bar addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
-        [bar setImage:kAvatar forState:UIControlStateNormal];
+        [bar setImage:[UIImage imageNamed:@"setting"] forState:UIControlStateNormal];
         bar.frame = CGRectMake(i * screenWidth / 3, 3, screenWidth / 3, 50);
         [[self.view viewWithTag:11] addSubview:bar];
         

@@ -107,6 +107,19 @@ CLLocationManager * locationManager;
     [MBProgressHUD hideAllHUDsForView:window animated:YES];
 }
 
+- (id)withView:(id)superView tag:(int)tag
+{
+    return [superView viewWithTag:tag];
+}
+
+- (int)inDexOf:(UIView*)view andTable:(UITableView*)tableView
+{
+    CGPoint center = view.center;
+    CGPoint rootViewPoint = [view.superview convertPoint:center toView:tableView];
+    NSIndexPath *indexPath = [tableView indexPathForRowAtPoint:rootViewPoint];
+    return indexPath.row;
+}
+
 @end
 
 @implementation NSDictionary (name)
